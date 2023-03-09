@@ -2,7 +2,7 @@ import { Route, Routes, matchPath, useLocation } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 
 import apiService from 'services/api-service';
-import Header from './Header';
+import Header from './header';
 import CharacterList from './CharacterList';
 import Filter from './Filter';
 import CharacterDetail from './CharacterDetail';
