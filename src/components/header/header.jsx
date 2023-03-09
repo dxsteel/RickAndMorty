@@ -1,4 +1,4 @@
-import './header.scss';
+import './Header.scss';
 import title from '../../img/RM.png';
 
 const HeaderTitle = () => {
