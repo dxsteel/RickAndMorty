@@ -50,7 +50,7 @@ export const App = () => {
           path="/"
           element={
             <main>
-              <Header />
+              <Header/>
               <Filter
                 filterByName={filterByName}
                 errorMessage={errorMessage}

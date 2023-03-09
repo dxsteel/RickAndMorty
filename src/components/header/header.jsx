@@ -1,7 +1,7 @@
 import './Header.scss';
 import title from '../../img/RM.png';
 
-const Header = () => {
+const HeaderTitle = () => {
   return (
     <div className="header">
       <img src={title} alt="Title" />;
@@ -9,4 +9,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default HeaderTitle;
