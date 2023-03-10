@@ -1,4 +1,5 @@
 import CharacterCard from "components/CharacterCard";
+import './CharacterList.scss'
 
 const CharacterList = (props) => {
   props.characters.sort(function (a, b) {
@@ -12,8 +13,8 @@ const CharacterList = (props) => {
   });
 
   return (
-    <section>
-      <ul>{characterElement}</ul>
+    <section >
+      <ul className="section">{characterElement}</ul>
     </section>
   );
 };

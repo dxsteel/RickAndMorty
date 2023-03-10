@@ -1,8 +1,9 @@
 import FilterByName from "components/FilterByName";
+import './Filter.scss';
 
 const Filter = (props) => {
   return (
-    <form onSubmit={props.handleSubmit}>
+    <form className="filter" onSubmit={props.handleSubmit}>
       <FilterByName
         filterByName={props.filterByName}
         errorMessage={props.errorMessage}

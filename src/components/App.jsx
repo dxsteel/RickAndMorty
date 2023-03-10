@@ -1,6 +1,8 @@
 import { Route, Routes, matchPath, useLocation } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 
+import './App.scss';
+
 import apiService from 'services/api-service';
 import Header from './header';
 import CharacterList from './CharacterList';
@@ -44,7 +46,7 @@ export const App = () => {
   );
 
   return (
-    <div>
+    <div className='container'>
       <Routes>
         <Route
           path="/"
