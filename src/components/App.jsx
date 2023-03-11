@@ -46,12 +46,12 @@ export const App = () => {
   );
 
   return (
-    <div className='container'>
+    <div >
       <Routes>
         <Route
           path="/"
           element={
-            <main>
+            <main className='container'>
               <Header/>
               <Filter
                 filterByName={filterByName}

@@ -1,38 +1,59 @@
 import { Link } from "react-router-dom";
+import './CharacterDetail.scss'
 
 const CharacterDetail = (props) => {
   return (
     <article>
-      <Link to="/">
-        ⬅ Go back
+      <Link className="detail-link" to="/">
+        ⬅ GO BACK
       </Link>
-      <img
+      <img className="detail-image"
         src={props.character.photo}
         alt={`Pictures of ${props.character.name}`}
         title={`Pictures of ${props.character.name}`}
       />
       <div>
-        <h3>
+        <h3 className="detail-name">
           {props.character.name}
         </h3>
-        <h4>
+        <h4 className="detail-informations">
           Informations
         </h4>
-        <p>
-        Gender: {props.character.gender}
+        <p className="detail-properties">
+        Gender
         </p>
-        <p>
-        Status: {props.character.status}
+        <p className="detail-descriptions">
+        {props.character.gender}
         </p>
-        <p>
-        Specie: {props.character.specie}
+        <p className="detail-line"></p>
+        <p className="detail-properties">
+        Status 
         </p>
-        <p>
-          Origin: {props.character.origin}
+        <p className="detail-descriptions">
+          {props.character.status}
+          </p>
+          <p className="detail-line"></p>
+        <p className="detail-properties">
+        Specie 
         </p>
-        <p>
-          Type: {props.character.type}
+        <p className="detail-descriptions">
+        {props.character.specie}
         </p>
+        <p className="detail-line"></p>
+        <p className="detail-properties">
+          Origin 
+        </p>
+        <p className="detail-descriptions">
+        {props.character.origin}
+        </p>
+        <p className="detail-line"></p>
+        <p className="detail-properties">
+          Type 
+        </p>
+        <p className="detail-descriptions">
+        {props.character.type}
+        </p>
+        <p className="detail-line"></p>
       </div>
     </article>
   );
