@@ -1,11 +1,12 @@
 import { BsSearch } from 'react-icons/bs';
 import './FilterByName.scss';
 
-const FilterByName = props => {
+const FilterByName = ({handleFilterName, filterByName, errorMessage}) => {
   const handleInput = ev => {
-    props.handleFilterName(ev.target.value);
+    handleFilterName(ev.target.value);
   };
   return (
+    <>
     <div>
       <span className="search">
         <BsSearch />
@@ -15,10 +16,11 @@ const FilterByName = props => {
         type="text"
         placeholder="Filter by name..."
         onInput={handleInput}
-        value={props.filterByName}
+        value={filterByName}
       />
-      <p>{props.errorMessage}</p>
     </div>
+    <p>{errorMessage}</p>
+    </>
   );
 };
 
