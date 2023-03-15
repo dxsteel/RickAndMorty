@@ -1,19 +1,19 @@
-import CharacterCard from "components/CharacterCard";
-import './CharacterList.scss'
+import CharacterCard from 'components/CharacterCard';
+import './CharacterList.scss';
 
-const CharacterList = (props) => {
+const CharacterList = props => {
   props.characters.sort(function (a, b) {
     if (a.name.toLowerCase() < b.name.toLowerCase()) return -1;
     if (a.name.toLowerCase() > b.name.toLowerCase()) return 1;
     return 0;
   });
 
-  const characterElement = props.characters.map((character) => {
+  const characterElement = props.characters.map(character => {
     return <CharacterCard character={character} key={character.id} />;
   });
 
   return (
-    <section >
+    <section>
       <ul className="section">{characterElement}</ul>
     </section>
   );

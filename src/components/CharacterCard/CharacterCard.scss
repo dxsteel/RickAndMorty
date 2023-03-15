@@ -1,58 +1,56 @@
 .card {
- display: flex;
- margin-left: auto;
- margin-right: auto;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 32px;
-  background: #FFFFFF;
-  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2), 0px 3px 4px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.14);
-border-radius: 4px;
+  background: #ffffff;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2), 0px 3px 4px rgba(0, 0, 0, 0.12),
+    0px 2px 4px rgba(0, 0, 0, 0.14);
+  border-radius: 4px;
   width: 312px;
   @media screen and (min-width: 1440px) {
     width: 240px;
     margin-bottom: 24px;
-   }
+  }
 }
 
 .image {
   @media screen and (max-width: 1439px) {
     width: 312px;
-   }
- 
-
+  }
 }
 
 .name {
   font-family: 'Roboto';
-font-style: normal;
-font-weight: 500;
-font-size: 20px;
-line-height: 30px;
-margin-top: 10px;
-margin-left: 16px;
-margin-right: 16px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  margin-top: 10px;
+  margin-left: 16px;
+  margin-right: 16px;
 
-display: flex;
-align-items: center;
-letter-spacing: 0.15px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.15px;
 
+  color: rgba(0, 0, 0, 0.87);
 
-color: rgba(0, 0, 0, 0.87);
-
-mix-blend-mode: normal;
+  mix-blend-mode: normal;
 }
 
 .species {
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 21px;
-margin-left: 16px;
-margin-bottom: 12px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  margin-left: 16px;
+  margin-bottom: 12px;
 
-letter-spacing: 0.25px;
+  letter-spacing: 0.25px;
 
-color: rgba(0, 0, 0, 0.6);
+  color: rgba(0, 0, 0, 0.6);
 
-mix-blend-mode: normal;
+  mix-blend-mode: normal;
 }

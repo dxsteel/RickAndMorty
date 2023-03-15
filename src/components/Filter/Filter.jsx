@@ -1,7 +1,7 @@
-import FilterByName from "components/FilterByName";
+import FilterByName from 'components/FilterByName';
 import './Filter.scss';
 
-const Filter = (props) => {
+const Filter = props => {
   return (
     <form className="filter" onSubmit={props.handleSubmit}>
       <FilterByName

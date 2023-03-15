@@ -46,13 +46,13 @@ export const App = () => {
   );
 
   return (
-    <div >
+    <div>
       <Routes>
         <Route
           path="/"
           element={
-            <main className='container'>
-              <Header/>
+            <main className="container">
+              <Header />
               <Filter
                 filterByName={filterByName}
                 errorMessage={errorMessage}
